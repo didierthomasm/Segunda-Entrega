@@ -1,0 +1,18 @@
+{
+    "1": {
+        "fname": "Didier",
+        "lname": "Thomas",
+        "age": 33,
+        "email": "didierthomas.m@gmail.com",
+        "address": {
+            "street": "Juan Zuazua",
+            "enumber": "524",
+            "inumber": "5",
+            "suburb": "Centro",
+            "postal code": "64000",
+            "city": "Monterrey",
+            "state": "Nuevo León",
+            "country": "México"
+        }
+    }
+}
