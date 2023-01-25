@@ -1,0 +1,8 @@
+setup.py
+Tienda_con_cliente.egg-info/PKG-INFO
+Tienda_con_cliente.egg-info/SOURCES.txt
+Tienda_con_cliente.egg-info/dependency_links.txt
+Tienda_con_cliente.egg-info/top_level.txt
+package/__init__.py
+package/module_client.py
+package/module_functions.py

@@ -13,7 +13,7 @@ class Address:
         self.pais = pais
 
     def __str__(self):
-        return f'Calle {self.calle}'
+        return f'Calle {self.calle} #{self.nexterior}, #int{self.ninterior}, colonia {self.colonia}, estado {self.estado}, pais {self.pais}'
 
     def make_address(self) -> dict:
         address = {
@@ -37,7 +37,7 @@ class Client:
         self._age = age
         self._email = email
         self._address = Address(calle, nexterior, colonia, cpostal, ciudad, estado, pais, ninterior)
-        self._client_number = user_id()
+        self._client_number = str(user_id())
 
     def __str__(self) -> str:
         return f'El nombre del clientes es {self._fname} {self._lname}.'

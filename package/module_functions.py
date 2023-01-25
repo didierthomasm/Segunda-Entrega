@@ -1,5 +1,6 @@
 import json
 import os
+from os import path
 
 folder_data = os.path.join(os.path.abspath('.'), 'data')
 clients_db = 'clients_db'
@@ -41,14 +42,13 @@ def save_new_client(new_client, db_file: str = 'clients_db'):
     cliente = new_client.make_client()
     no_id = new_client._client_number
     new_client = {no_id: cliente}
-
+    newJson = load_db()
+    newJson = {**newJson, **new_client}
     path_to_json = os.path.join(folder_data, db_file + '.json')
 
     if new_client:
-        json.dump(new_client, open(path_to_json, 'w'), indent=4)
+        json.dump(newJson, open(path_to_json, 'w'), indent=4)
         print('Usuario guardado')
         print('')
     else:
         print('No había que guardar')
-
-# Regresa la edad
